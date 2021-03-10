@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/C_8DBDC9"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/Button07"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button04"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button01"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="1" />
+
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button00"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="0" />
+
+
+    </LinearLayout>
+
+    <View style="@style/line_1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Button08"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button05"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button02"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="2" />
+
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/ButtonPoint"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="." />
+
+    </LinearLayout>
+
+    <View style="@style/line_1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Button09"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="9" />
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button06"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="6" />
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/Button03"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="3" />
+
+
+        <View style="@style/line_2" />
+
+        <Button
+            android:id="@+id/ButtonJia"
+            style="@style/textView_calculator"
+            android:layout_weight="1"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <View style="@style/line_1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ButtonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_calculator_bg"
+                android:src="@drawable/ic_calculator_delete" />
+
+            <View style="@style/line_2" />
+
+            <ImageButton
+                android:id="@+id/ButtonClean"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_calculator_bg"
+                android:src="@drawable/ic_calculator_clean" />
+
+        </LinearLayout>
+
+        <View style="@style/line_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_calculator_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ButtonDengyu"
+                style="@style/textView_calculator"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="=" />
+
+            <View style="@style/line_2" />
+
+
+            <LinearLayout
+                android:id="@+id/lyScan"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_calculator_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="@dimen/mm_35"
+                    android:layout_height="@dimen/mm_35"
+                    android:background="@drawable/ic_calculator_scan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mm_12"
+                    android:text="掃碼收款"
+                    android:textColor="@color/C_FFFFFF"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

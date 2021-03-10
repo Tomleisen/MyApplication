@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/C_5A8A96"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mm_18"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/mm_18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的餘額： "
+                android:textColor="@color/C_FFFFFF"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20000 "
+                android:textColor="@color/C_FFFFFF"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvMoneyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEE"
+                android:textColor="@color/C_FFFFFF"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mm_12"
+            android:paddingStart="@dimen/mm_18"
+            android:text="收款金額："
+            android:textColor="@color/C_FFFFFF"
+            android:textSize="@dimen/sp_17" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/mm_18"
+            android:paddingEnd="@dimen/mm_14">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789.+"
+                android:gravity="end|bottom"
+                android:paddingBottom="@dimen/mm_10"
+                android:textColor="@color/C_FFFFFF"
+                android:textSize="@dimen/sp_40"
+                android:textStyle="bold"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvMoneyCode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mm_10"
+                android:paddingBottom="@dimen/mm_10"
+                android:text="BEE"
+                android:textColor="@color/C_FFFFFF"
+                android:textSize="@dimen/sp_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#804B4B4B"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/mm_21"
+            android:paddingTop="@dimen/mm_11"
+            android:paddingEnd="@dimen/mm_24"
+            android:paddingBottom="@dimen/mm_11"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_calculator_msg" />
+
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/mm_20"
+                android:gravity="start"
+                android:textColor="@color/C_FFFFFF"
+                tools:text="234234 BEE 收款成功！ [2021-03-10]" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/include_calculator_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>
