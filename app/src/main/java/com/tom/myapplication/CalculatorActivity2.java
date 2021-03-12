@@ -88,9 +88,13 @@ public class CalculatorActivity2 extends AppCompatActivity implements View.OnCli
                 //https://blog.csdn.net/xiayiye5/article/details/90412877?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control
 
                 String total = s.toString();
+                //以零开头
                 if (total.startsWith("0")) {
+                    //数据长度大于等于2
                     if (total.length() >= 2) {
+                        //数据从零开始数，第一位不等于点时
                         if (!".".equals(String.valueOf(total.charAt(1)))) {
+                            //删除第零位字符串。（意思就是0开头时，输入了X，等于0X；删除 0）
                             total = total.substring(1, total.length());
                             editText.setText(total);
                             editText.setSelection(total.length());
