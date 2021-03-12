@@ -97,14 +97,18 @@ public class CalculatorActivity2 extends AppCompatActivity implements View.OnCli
                         }
                     }
                 }
+                //小数点结尾
                 if (total.endsWith(".")) {
-                    if (total.contains("..")) {
+                    if (total.contains("..")) {//输入的内容包含两个点
                         editText.setText(getEditText().substring(0, getEditText().length() - 1));
                     } else {
                         try {
+                            //拆分数据，并且拿到最后一组数据
                             String[] numArray = getSelectTime(getEditText());
+                            //最后一组数据转换 浮点类型，如果可以转换成功则代表是正常的数字或小数点
                             float numFloat = Float.valueOf(numArray[numArray.length - 1]);
                         } catch (Exception e) {
+                            //转换错误则删掉最后一位小数点
                             editText.setText(getEditText().substring(0, getEditText().length() - 1));
                         }
                     }
