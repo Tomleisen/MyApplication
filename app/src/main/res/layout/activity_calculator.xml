@@ -32,7 +32,7 @@
                 android:id="@+id/tvMoney"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="20000 "
+                android:text="20000"
                 android:textColor="@color/C_FFFFFF"
                 android:textSize="@dimen/sp_14" />
 
@@ -41,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BEE"
+                android:layout_marginStart="@dimen/mm_10"
                 android:textColor="@color/C_FFFFFF"
                 android:textSize="@dimen/sp_14" />
 
