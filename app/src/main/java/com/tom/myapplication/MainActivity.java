@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.lkn.net.creator.ServiceGenerator;
@@ -14,6 +15,8 @@ import com.tom.myapplication.calcu.CalculatorActivity3;
 import com.tom.myapplication.dialog.TestDialog;
 import com.tom.myapplication.dialogmanager.DialogManager;
 import com.tom.myapplication.dialogmanager.DialogParam;
+
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         textView3 = findViewById(R.id.textView3);
         textView3.setOnClickListener(this::onClicks3);
 //        initDialog(this);
+        textView.setText(getString(R.string.calculator));
     }
 
 
@@ -39,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 //        MyToast.show(this, JsonUtils.toJson("123456"));
 //        ServiceGenerator serviceGenerator = new ServiceGenerator();
         startActivity(new Intent(MainActivity.this,CalculatorActivity.class));
+        Log.e("TAG",String.valueOf(Locale.getDefault()));
     }
 
     public void onClicks3(View view) {

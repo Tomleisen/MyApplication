@@ -39,7 +39,7 @@ public class Utils {
     }
 
 
-    private String getLanguageEnv() {
+    public static String getLanguageEnv() {
 //        Locale locale = LocaleList.getDefault().get(0);
         Locale l = Locale.getDefault();
         String language = l.getLanguage();
