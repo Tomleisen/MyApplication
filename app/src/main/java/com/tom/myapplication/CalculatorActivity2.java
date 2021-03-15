@@ -206,7 +206,9 @@ public class CalculatorActivity2 extends AppCompatActivity implements View.OnCli
         float numFloat = 0.00f;
         String[] numArray = getSelectTime(getEditText());
         for (int i = 0; i < numArray.length; i++) {
-            numFloat = numFloat + Float.valueOf(numArray[i]);
+            if (!TextUtils.isEmpty(numArray[i])){
+                numFloat = numFloat + Float.valueOf(numArray[i]);
+            }
         }
         calculateNum = formatNumberOne(numFloat);
         if (calculateNum.contains(".00")) {
